@@ -423,7 +423,7 @@ INSERT INTO `sys_menu` (`parent_id`, `name`, `url`, `perms`, `type`, `icon`, `or
     SELECT @parentId, '删除', null, 'generator:bsproduct:delete', '2', null, '6';
 
 
---微店订单创建表
+-- 微店订单创建表
 DROP TABLE IF EXISTS `renren_fast_vue`.`bs_wechat_order`;
 CREATE TABLE  `renren_fast_vue`.`bs_wechat_order` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
@@ -457,7 +457,7 @@ CREATE TABLE  `renren_fast_vue`.`bs_wechat_order` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='微店订单';
 
---微店订单明细
+-- 微店订单明细
 DROP TABLE IF EXISTS `renren_fast_vue`.`bs_Wechat_Order_Line`;
 CREATE TABLE  `renren_fast_vue`.`bs_Wechat_Order_Line` (
    `id` bigint(20) NOT NULL AUTO_INCREMENT,
