@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="io.renren.modules.generator.dao.BsWechatOrderDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="io.renren.modules.generator.entity.BsWechatOrderEntity" id="bsWechatOrderMap">
+        <result property="id" column="id"/>
+        <result property="orderId" column="order_id"/>
+        <result property="orderStatus" column="order_status"/>
+        <result property="orderTotalPrice" column="order_total_price"/>
+        <result property="orderCreateTime" column="order_create_time"/>
+        <result property="orderExpressPrice" column="order_express_price"/>
+        <result property="buyerOpenid" column="buyer_openid"/>
+        <result property="buyerNick" column="buyer_nick"/>
+        <result property="receiverName" column="receiver_name"/>
+        <result property="receiverProvince" column="receiver_province"/>
+        <result property="receiverCity" column="receiver_city"/>
+        <result property="receiverZone" column="receiver_zone"/>
+        <result property="receiverAddress" column="receiver_address"/>
+        <result property="receiverMobile" column="receiver_mobile"/>
+        <result property="receiverPhone" column="receiver_phone"/>
+        <result property="productId" column="product_id"/>
+        <result property="productName" column="product_name"/>
+        <result property="productPrice" column="product_price"/>
+        <result property="productSku" column="product_sku"/>
+        <result property="productCount" column="product_count"/>
+        <result property="productImg" column="product_img"/>
+        <result property="deliveryId" column="delivery_id"/>
+        <result property="deliveryCompany" column="delivery_company"/>
+        <result property="transId" column="trans_id"/>
+        <result property="createUserId" column="create_user_id"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateUserId" column="update_user_id"/>
+        <result property="updateTime" column="update_time"/>
+    </resultMap>
+
+
+</mapper>

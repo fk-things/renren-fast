@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="io.renren.modules.generator.dao.BsWechatOrderLineDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="io.renren.modules.generator.entity.BsWechatOrderLineEntity" id="bsWechatOrderLineMap">
+        <result property="id" column="id"/>
+        <result property="orderId" column="order_id"/>
+        <result property="productId" column="product_id"/>
+        <result property="productName" column="product_name"/>
+        <result property="productPrice" column="product_price"/>
+        <result property="productSku" column="product_sku"/>
+        <result property="productCount" column="product_count"/>
+        <result property="productImg" column="product_img"/>
+        <result property="createUserId" column="create_user_id"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateUserId" column="update_user_id"/>
+        <result property="updateTime" column="update_time"/>
+    </resultMap>
+
+
+</mapper>
